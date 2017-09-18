@@ -1,0 +1,19 @@
+{
+  "name": "redesign",
+  "version": "1.0.0",
+  "description": "redesign website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Milly Xun",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4"
+  },
+  "devDependencies": {
+    "method-override": "^2.3.9",
+    "nodemon": "^1.12.1"
+  }
+}

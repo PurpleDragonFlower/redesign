@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+	<title>IRS Form 1040</title>
+	<base href="/">
+	
+	<link href="washington_state_university_9_2Qk_icon.ico" rel="icon" type="image/x-icon" />
+	
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+	<link rel="stylesheet" href="style.css"> <!-- custom styles -->
+	
+	<script type="text/javascript" src="libs/angular/angular.min.js"></script>
+	<script type="text/javascript" src="libs/angular-route/angular-route.min.js"></script>
+	<script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+	
+	<script src="MainController.js"></script>
+	<script src="FilingController.js"></script>
+	<script src="FinalizeController.js"></script>
+	<script src="appRoutes.js"></script>
+	<script src="app.js"></script>
+</head>
+<body ng-app="app" ng-controller="MainController">
+	<div class="container">
+
+		<!-- HEADER -->
+		<nav class="navbar navbar-default" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">IRS Home Page</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class-"active"><a href="/">Home</a></li>
+					<li><a href="/filing">Filing</a></li>
+					<li><a href="/finalize">Finalize</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</nav>
+
+		<!-- ANGULAR DYNAMIC CONTENT -->
+		<div id="view" ng-view></div>
+
+	</div>
+</body>
+</html>
